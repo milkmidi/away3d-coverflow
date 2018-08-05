@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<application xmlns="http://ns.adobe.com/air/application/3.4">
+	<id>com.milkmidi.stage3ddemo.coverflow</id>
+	<versionNumber>1.0.0</versionNumber>
+	<versionLabel>alpha1</versionLabel>
+	<filename>Away3D_Coverflow</filename>
+	<description>Away3D_Coverflow</description>
+	<supportedProfiles>mobileDevice</supportedProfiles>
+	<name>Away3D_Coverflow</name>
+	<customUpdateUI>false</customUpdateUI>
+	<allowBrowserInvocation>false</allowBrowserInvocation>
+	<initialWindow>
+		<content>coverflow.swf</content>
+		<systemChrome>standard</systemChrome>
+		<transparent>false</transparent>
+		<visible>true</visible>
+		<fullScreen>true</fullScreen>
+		<aspectRatio>landscape</aspectRatio>
+		<renderMode>direct</renderMode>
+		<autoOrients>true</autoOrients>
+		<depthAndStencil>true</depthAndStencil>
+	</initialWindow>
+	<icon>
+		<image36x36>icons/36.png</image36x36>
+		<image48x48>icons/48.png</image48x48>
+		<image72x72>icons/72.png</image72x72>
+		<image57x57>icons/57.png</image57x57>
+		<image114x114>icons/114.png</image114x114>
+	</icon>
+	
+	<android>
+		<manifestAdditions>
+			<![CDATA[
+			<manifest android:installLocation="preferExternal">
+				<uses-permission android:name="android.permission.READ_PHONE_STATE" />
+			</manifest>
+			]]>
+		</manifestAdditions>
+	</android>
+	<iPhone>
+		<InfoAdditions>
+			<![CDATA[
+			<key>UIDeviceFamily</key>
+			<array>
+				<string>1</string>
+				<string>2</string>
+			</array>
+			]]>
+		</InfoAdditions>
+		<requestedDisplayResolution>high</requestedDisplayResolution>
+	</iPhone>
+
+</application>
